@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Swaroop E-Commerce Store</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<h2>Swaroop Store</h2>
+
+<input id="search" placeholder="Search products..." onkeyup="searchProduct()">
+
+<button onclick="openForm()">Add Product</button>
+
+</nav>
+
+<section class="hero">
+
+<h1>Manage Your Products</h1>
+<p>Spring Boot E-Commerce Dashboard</p>
+
+</section>
+
+<section class="products">
+
+<h2>Products</h2>
+
+<div id="productList" class="grid"></div>
+
+</section>
+
+
+<div id="productForm" class="modal">
+
+<div class="modal-content">
+
+<h2>Add / Update Product</h2>
+
+<input id="id" placeholder="Product ID (for update)">
+<input id="name" placeholder="Product Name">
+<input id="description" placeholder="Description">
+<input id="price" placeholder="Price">
+<input id="imageUrl" placeholder="Image URL">
+
+<button onclick="addProduct()">Add</button>
+<button onclick="updateProduct()">Update</button>
+<button onclick="closeForm()">Close</button>
+
+</div>
+
+</div>
+
+<footer>
+
+<p>© 2026 Swaroop E-Commerce</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
