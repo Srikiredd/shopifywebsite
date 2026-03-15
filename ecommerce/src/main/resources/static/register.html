@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -44,4 +45,52 @@ role:"USER"
 </script>
 
 </body>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+<title>Register</title>
+</head>
+
+<body>
+
+<h2>Create Account</h2>
+
+<input id="username" placeholder="Username">
+<input id="password" placeholder="Password">
+
+<button onclick="register()">Register</button>
+
+<script>
+
+function register(){
+
+fetch("/registerUser",{
+
+method:"POST",
+
+headers:{
+"Content-Type":"application/json"
+},
+
+body:JSON.stringify({
+
+username:document.getElementById("username").value,
+
+password:document.getElementById("password").value,
+
+role:"USER"
+
+})
+
+})
+
+.then(()=>alert("User Registered"))
+
+}
+
+</script>
+
+</body>
+>>>>>>> ffd58ef92efa76137e50702055b1bfbc783c922d
 </html>
